@@ -1,0 +1,12 @@
+{
+  "name": "jwt-authentication-frontend-app",
+  "version": "1.0.0",
+  "description": "Frontend Angular 16 application for token-based authentication using JWT in a basic web application",
+  "main": "index.js",
+  "repository": "git@quantum_adrenaline_1.github.com:Angular-Frontend-Avengers/angular-jwt-authentication.git",
+  "author": "quantum-adrenaline-1",
+  "license": "MIT",
+  "devDependencies": {
+    "@angular/cli": "^16.2.7"
+  }
+}
