@@ -128,3 +128,44 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Compiled output
+jwt-authentication-frontend-app/dist
+jwt-authentication-frontend-app/tmp
+jwt-authentication-frontend-app/out-tsc
+jwt-authentication-frontend-app/bazel-out
+
+# Node
+jwt-authentication-frontend-app/node_modules
+jwt-authentication-frontend-app/npm-debug.log
+jwt-authentication-frontend-app/yarn-error.log
+
+# IDEs and editors
+jwt-authentication-frontend-app/.idea/
+jwt-authentication-frontend-app/.project
+jwt-authentication-frontend-app/.classpath
+jwt-authentication-frontend-app/.c9/
+jwt-authentication-frontend-app/*.launch
+jwt-authentication-frontend-app/.settings/
+jwt-authentication-frontend-app/*.sublime-workspace
+
+# Visual Studio Code
+jwt-authentication-frontend-app/.vscode/*
+jwt-authentication-frontend-app/!.vscode/settings.json
+jwt-authentication-frontend-app/!.vscode/tasks.json
+jwt-authentication-frontend-app/!.vscode/launch.json
+jwt-authentication-frontend-app/!.vscode/extensions.json
+jwt-authentication-frontend-app/.history/*
+
+# Miscellaneous
+jwt-authentication-frontend-app/.angular/cache
+jwt-authentication-frontend-app/.sass-cache/
+jwt-authentication-frontend-app/connect.lock
+jwt-authentication-frontend-app/coverage
+jwt-authentication-frontend-app/libpeerconnection.log
+jwt-authentication-frontend-app/testem.log
+jwt-authentication-frontend-app/typings
+
+# System files
+jwt-authentication-frontend-app/.DS_Store
+jwt-authentication-frontend-app/Thumbs.db
