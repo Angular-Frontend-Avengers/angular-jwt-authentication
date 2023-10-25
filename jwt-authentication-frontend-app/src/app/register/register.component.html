@@ -14,7 +14,9 @@
           <!-- form: email -->
           <div class="form-group pt-2">
             <label for="email">Email</label>
+            <!-- email: implemented with 2-way data-binding -->
             <input
+              [(ngModel)]="this.registerUserData.email"
               type="text"
               name="email"
               id="email"
@@ -26,7 +28,9 @@
           <!-- form: password -->
           <div class="form-group pt-4">
             <label for="password">Password</label>
+            <!-- password: implemented with 2-way data-binding -->
             <input
+              [(ngModel)]="this.registerUserData.password"
               type="text"
               name="password"
               id="password"
@@ -37,7 +41,11 @@
           </div>
           <!-- form: button: register -->
           <div class="form-group pt-4 pb-2">
-            <button type="button" class="btn btn-primary float-end">
+            <button
+              type="button"
+              class="btn btn-primary float-end"
+              (click)="this.onRegisterButtonClick()"
+            >
               Register
             </button>
           </div>
