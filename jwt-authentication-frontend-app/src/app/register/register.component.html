@@ -1,1 +1,48 @@
-<p>register works!</p>
+<div class="row">
+  <!-- have width of 6 columns and align it symmetrically on horizontal axis (row) -->
+  <div class="col-md-6 pt-5 mt-5 mx-auto">
+    <!-- card -->
+    <div class="card" style="border-width: thin">
+      <!-- card: header -->
+      <div class="card-header">
+        <h3 class="mb-0">Register</h3>
+      </div>
+      <!-- card: body -->
+      <div class="card-body">
+        <!-- form: user registration -->
+        <form class="form">
+          <!-- form: email -->
+          <div class="form-group pt-2">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              class="form-control rounded-0"
+              placeholder="Enter email"
+              required
+            />
+          </div>
+          <!-- form: password -->
+          <div class="form-group pt-4">
+            <label for="password">Password</label>
+            <input
+              type="text"
+              name="password"
+              id="password"
+              class="form-control rounded-0"
+              placeholder="Enter password"
+              required
+            />
+          </div>
+          <!-- form: button: register -->
+          <div class="form-group pt-4 pb-2">
+            <button type="button" class="btn btn-primary float-end">
+              Register
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
