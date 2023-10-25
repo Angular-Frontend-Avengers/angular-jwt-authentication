@@ -1,7 +1,11 @@
 <!-- root navbar -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
   <div class="container-fluid">
-    <!-- navbar banner -->
+    <!-- navbar banner
+      - Here, the href '#' is equivalent to empty route ''
+      - So, route '' is executed on clicking the navbar banner
+      - As per the route '' in AppRoutingModule, the application re-directs to '/events' 
+    -->
     <a class="navbar-brand" href="#">Eventhub</a>
 
     <!-- Makes the navbar responsive (shows up a button to use navbar links when window shrinks) -->
@@ -22,20 +26,55 @@
       <!-- navbar links: event -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Events</a>
+          <!-- 
+            anchor tag '<a>' directive details:
+                * routerLink:
+                  - when applied to an element, makes that element a link that initiates navigation to the specified route
+                  - this navigation (if implemented in AppRoutingModule) opens one or more routed component in one or more 'router-outlet' directive locations on the page
+                * routerLinkActive:
+                  - tracks whether the linked route to an element is currently active
+                  - allows to add single or multiple CSS classes to the element when its linked route is active
+          -->
+          <a
+            class="nav-link"
+            aria-current="page"
+            href="#"
+            routerLink="/events"
+            routerLinkActive="active"
+            >Events</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Members</a>
+          <a
+            class="nav-link"
+            href="#"
+            routerLink="/special"
+            routerLinkActive="active"
+            >Members</a
+          >
         </li>
       </ul>
 
       <!-- navbar links: authentication/sign-up -->
       <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Login</a>
+          <a
+            class="nav-link"
+            aria-current="page"
+            href="#"
+            routerLink="/login"
+            routerLinkActive="active"
+            >Login</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Register</a>
+          <a
+            class="nav-link"
+            href="#"
+            routerLink="/register"
+            routerLinkActive="active"
+            >Register</a
+          >
         </li>
       </ul>
     </div>
