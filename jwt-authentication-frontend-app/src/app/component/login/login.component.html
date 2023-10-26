@@ -1,1 +1,53 @@
-<p>login works!</p>
+<div class="row">
+  <div class="col-md-6 mx-auto pt-5 mt-5">
+    <!-- login card -->
+    <div class="card">
+      <!-- login card: header -->
+      <div class="card-header">
+        <h3 class="mb-0">Login</h3>
+      </div>
+      <!-- login card: body -->
+      <div class="card-body">
+        <!-- login card: body: form -->
+        <form class="form">
+          <!-- login form: email -->
+          <div class="form-group pt-2">
+            <label for="email">Email</label>
+            <input
+              [(ngModel)]="this.userLoginData.email"
+              type="email"
+              name="email"
+              id="email"
+              class="form-control rounded-0"
+              placeholder="Enter email"
+              required
+            />
+          </div>
+          <!-- login form: password -->
+          <div class="form-group pt-4">
+            <label for="password">Password</label>
+            <input
+              [(ngModel)]="this.userLoginData.password"
+              type="password"
+              name="password"
+              id="password"
+              class="form-control rounded-0"
+              placeholder="Enter password"
+              required
+            />
+          </div>
+          <!-- login form: login button -->
+          <div class="form-group pt-4">
+            <button
+              type="button"
+              class="btn btn-success float-end"
+              (click)="this.onLoginButtonClick()"
+            >
+              Login
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
