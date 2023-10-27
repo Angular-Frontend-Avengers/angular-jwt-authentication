@@ -26,4 +26,8 @@ export class EventsComponent implements OnInit {
     };
     this.eventsService.getEvents().subscribe(eventsResponseObserver);
   }
+
+  getEvents(): Events[] {
+    return EventsComponent.events;
+  }
 }
