@@ -1,1 +1,12 @@
-<p>event-card works!</p>
+<div class="card text-center">
+  <div class="card-body">
+    <h3 class="card-title pt-1">{{ this.name }}</h3>
+    <p class="card-text pt-2 pb-1">{{ this.description }}</p>
+    <div class="pb-2">
+      <button type="button" class="btn btn-primary rounded-0">
+        Buy Tickets
+      </button>
+    </div>
+  </div>
+  <div class="card-header p-3 text-muted">{{ this.formatEventDate(this.date) }}</div>
+</div>
