@@ -1,1 +1,9 @@
-<p>events works!</p>
+<div class="grid row row-gap-4 pt-4 pb-4">
+  <div class="col-md-4" *ngFor="let event of this.getEvents()">
+    <app-event-card
+      [name]="event.name"
+      [description]="event.description"
+      [date]="event.date"
+    ></app-event-card>
+  </div>
+</div>
