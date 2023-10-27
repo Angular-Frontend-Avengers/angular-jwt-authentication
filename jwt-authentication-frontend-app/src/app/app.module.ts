@@ -6,7 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './component/register/register.component';
 import { LoginComponent } from './component/login/login.component';
-import { EventsComponent } from './events/events.component';
+import { EventsComponent } from './component/events/events.component';
 import { SpecialEventsComponent } from './special-events/special-events.component';
 import { EventCardComponent } from './component/event-card/event-card.component';
 
